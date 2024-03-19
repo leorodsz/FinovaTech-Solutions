@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 20px;
+    background-color: #fff; /* Fundo branco */
+  }
+
+  
+
+  #ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+    background-color: #C0C0C0;
+    color: #1E90FF; 
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  #ticker {
+    display: inline-block;
+    animation: tickerMove linear infinite;
+    animation-duration: 400s; /* Ajuste conforme necessário */
+    font-size: 20px;
+  }
+
+  @keyframes tickerMove {
+    to {
+      transform: translateX(-100%);
+    }
+  }
